@@ -1,0 +1,184 @@
+DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan'ın Örgü Dünyası | El Emeği Sanatı</title>
+    <style>
+        /* Genel Ayarlar */
+        :root {
+            --primary-color: #e8a598; /* Sıcak örgü rengi */
+            --secondary-color: #5d5d5d;
+            --bg-color: #fff9f8;
+        } 
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            line-height: 1.6;
+        } 
+
+        /* Navigasyon */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        } 
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        } 
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        } 
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        } 
+
+        /* Hero (Karşılama) Bölümü */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(232, 165, 152, 0.2), rgba(232, 165, 152, 0.2)), 
+                        url('https://images.unsplash.com/photo-1584992236310-6edddc08acff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        } 
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #4a4a4a;
+        } 
+
+        /* Modeller Kategorisi */
+        .section-title {
+            text-align: center;
+            margin: 50px 0;
+        } 
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 5%;
+            margin-bottom: 50px;
+        } 
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        } 
+
+        .card:hover {
+            transform: translateY(-10px);
+        } 
+
+        .card-img {
+            height: 250px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+        } 
+
+        .card-info {
+            padding: 20px;
+        } 
+
+        /* İletişim */
+        footer {
+            background: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        } 
+
+        .cta-button {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body> 
+
+    <nav>
+        <div class="logo">🧶 Alan Örgü Dünyam</div>
+        <div class="nav-links">
+            <a href="#modeller">Modeller</a>
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#iletisim">İletişim</a>
+        </div>
+    </nav> 
+
+    <header class="hero">
+        <h1>Alan'ın Örgü Dünyası</h1>
+        <p>Geleneksel dokunuşlar, modern tasarımlar.</p>
+        <a href="#modeller" class="cta-button">Koleksiyonu Gör</a>
+    </header> 
+
+    <div id="modeller">
+        <h2 class="section-title">En Yeni Tasarımlar</h2>
+        <div class="gallery">
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1528918804441-55a281844390?q=80&w=400')"></div>
+                <div class="card-info">
+                    <h3>Bebek Hırkaları</h3>
+                    <p>%100 organik yün ile örülmüş, minikler için en iyisi.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1610410083230-aa45a28cb739?q=80&w=400')"></div>
+                <div class="card-info">
+                    <h3>Amigurumi Oyuncaklar</h3>
+                    <p>Çocukların yeni oyun arkadaşları burada.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=400')"></div>
+                <div class="card-info">
+                    <h3>Kışlık Aksesuarlar</h3>
+                    <p>Atkı, bere ve eldiven setleriyle kışa hazırsınız.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <footer id="iletisim">
+        <h3>İletişime Geçin</h3>
+        <p>Sipariş ve bilgi için: alan@orgudunyam.com</p>
+        <p>© 2026 Örgü Dünyam - Tüm Hakları Saklıdır.</p>
+    </footer> 
+
+</body>
+</html>
