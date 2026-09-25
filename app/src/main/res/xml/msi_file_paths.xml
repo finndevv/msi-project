@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="msi_files" path="." />
+    <cache-path name="msi_cache" path="." />
+    <external-path name="msi_external" path="." />
+    <external-files-path name="msi_ext_files" path="." />
+    <external-cache-path name="msi_ext_cache" path="." />
+</paths>
